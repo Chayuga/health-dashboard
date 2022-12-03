@@ -13,16 +13,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/components": ["components"],
-      "@/components/*": ["components/*"],
-      "@/components/**": ["components/**/*"],
-      "@/styles/*": ["styles/*"],
-      "@/hooks/*": ["hooks/*"]
-    }
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/**/*.tsx",
+    "components/graph/DonutChart.jsx",
+    "components/graph/BarGraph.jsx",
+    "pages/login.jsx",
+    "pages/auth/signin.jsx"
+  ],
   "exclude": ["node_modules"]
 }
