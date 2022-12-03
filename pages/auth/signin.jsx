@@ -1,4 +1,4 @@
-import { useSession, getProviders, signIn, signOut } from 'next-auth/react';
+import { getProviders, signIn } from 'next-auth/react';
 
 import { FcGoogle } from 'react-icons/fc';
 import { FaRegEnvelope } from 'react-icons/fa';
@@ -7,27 +7,7 @@ import { MdLockOutline } from 'react-icons/md';
 import useMediaQuery from '../../hooks/useMediaQuery';
 
 export default function SignIn({ providers }) {
-  const { data: session } = useSession();
-
   const isTabletAndAbove = useMediaQuery('(min-width: 680px)');
-
-  if (session) {
-    return (
-      <>
-        <p>Hello, {session.user.name}</p>
-        {Object.values(providers).map((provider) => (
-          <div key={provider.name}>
-            <button
-              onClick={() => signOut()}
-              className='relative p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600 rounded-full'
-            >
-              Sign Out
-            </button>
-          </div>
-        ))}
-      </>
-    );
-  }
 
   return (
     <>
