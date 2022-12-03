@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className='px-6 sm:pl-20 bg-white'>
-      <div className='flex items-center justify-between ml-auto'>
+      <div className='flex justify-end sm:items-center sm:justify-between ml-auto'>
         <>{isTabletAndAbove && <SearchBox />}</>
         <div className='flex items-center'>
           <UserMenu />
