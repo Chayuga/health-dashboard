@@ -3,7 +3,7 @@ import React, { Fragment, useState } from 'react';
 
 import Footer from './Footer';
 import Header from './Header';
-import Sidebar from './Sidebar';
+import Sidebar from './sidebar/index';
 
 interface iProps {
   children: React.ReactElement;

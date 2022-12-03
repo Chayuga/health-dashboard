@@ -42,17 +42,6 @@ function SideNavbar() {
               </div>
             ))}
           </div>
-          <div className='flex justify-center hover:bg-red-600 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto'>
-            <button
-              // onClick={() => signOut()}
-              className='flex mb-2 justify-start items-center gap-4 '
-            >
-              <MdOutlineLogout className='text-2xl text-gray-600 group-hover:text-white ' />
-              <h3 className='text-base text-gray-800 group-hover:text-white font-semibold '>
-                Log Out
-              </h3>
-            </button>
-          </div>
         </div>
       </Disclosure>
     </div>
