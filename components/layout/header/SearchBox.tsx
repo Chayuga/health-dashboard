@@ -4,7 +4,6 @@ import { GoSearch } from 'react-icons/go';
 const SearchBox = () => {
   return (
     <div className='relative w-full max-w-md sm:-ml-2'>
-      {/* TODO: Write function to search itema */}
       <GoSearch className='absolute h-6 w-6 mt-2.5 ml-2 text-gray-400' />
       <input
         type='text'
